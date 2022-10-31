@@ -7,20 +7,10 @@ public class Main {
 
         Books garryPotter = new Books("Гарри Поттер", joanneRowling, 2004);
         Books blackTower = new Books("Темная башня", stephenKing, 1998);
+        Books garryPotter2 = new Books("Гарри Поттер", joanneRowling, 2004);
 
-        System.out.println("Книга 1\nНазвание: " + garryPotter.getName() + "\n" +
-                "Афтор: " + joanneRowling.getName() + " " + joanneRowling.getSurname() + "\n" +
-                "Год публикации: " + garryPotter.getYearPublication() + "\n");
-
-        System.out.println("Книга 2\nНазвание: " + blackTower.getName() + "\n" +
-                "Афтор: " + stephenKing.getName() + " " + stephenKing.getSurname() + "\n" +
-                "Год публикации: " + blackTower.getYearPublication() + "\n");
-
-        garryPotter.setYearPublication(1997);
-
-        System.out.println("Книга 1 (измененен год)\nНазвание: " + garryPotter.getName() + "\n" +
-                "Афтор: " + joanneRowling.getName() + " " + joanneRowling.getSurname() + "\n" +
-                "Год публикации: " + garryPotter.getYearPublication() + "\n");
-
+        System.out.println(garryPotter.toString());
+        System.out.println("garryPotter.equals(blackTower) = " + garryPotter.equals(blackTower));
+        System.out.println("garryPotter.equals(garryPotter2) = " + garryPotter.equals(garryPotter2));
     }
 }
